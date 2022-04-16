@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import TopBar from './components/TopBar'
+import HomePage from './pages/Home';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           <code>shekoo is here</code> 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ReMind - mental health at your fingertips
-        </a>
-      </header>
+       <TopBar />
+       <HomePage />
     </div>
   );
 }
