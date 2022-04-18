@@ -6,7 +6,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import TopBar from './components/TopBar'
 import HomePage from './pages/Home';
-
+import Quiz from './pages/Quiz';
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
     <div className="App">
        <TopBar />
        <HomePage />
+       
     </div>
   );
 }

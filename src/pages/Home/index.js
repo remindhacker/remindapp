@@ -1,29 +1,42 @@
 import * as React from 'react';
-import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-
+import Stack from '@mui/material/Stack';
+import { styled } from '@mui/material/styles';
+ import QuizMain from '../../components/QuizMain';
 
 export default function HomePage(){
 
-    
     const Item = styled(Paper)(({ theme }) => ({
         backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
         ...theme.typography.body2,
-        padding: theme.spacing(2),
+        padding: theme.spacing(1),
         textAlign: 'center',
         color: theme.palette.text.secondary,
       }));
+      
+
+    const recomHandler = () => {
+        
+    }
+
+    const analyticsHandler = () => {
+        console.log("reached analyticsHandler");
+    }
+
+    const profileHandler = () => {
+        console.log("reached profileHandler");
+    }
 
     return(
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-            {Array.from(Array(6)).map((_, index) => (
-                <Grid item xs={2} sm={4} md={4} key={index}>
-                <Item>xs=2</Item>
-                </Grid>
-            ))}
-        </Grid>
+        <Box sx={{ width: '100%' }}>
+        <Stack spacing={2}>
+          <Item><button onClick={recomHandler}>Get Recommendations</button></Item>
+          <Item><button onClick={analyticsHandler}>Analytics</button></Item>
+          <Item><button onClick={profileHandler}>Profile</button></Item>
+          <Item><QuizMain /> </Item>
+        </Stack>
+      </Box>
     );
 
 
