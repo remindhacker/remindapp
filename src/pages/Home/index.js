@@ -3,7 +3,24 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
- import QuizMain from '../../components/QuizMain';
+import QuizMain from '../../components/QuizMain';
+import Wizard from '../../components/Wizard';
+import Results from '../../components/Results';
+import Recom from '../../components/Results/Recom';
+import BookRec from '../../components/Results/BookRec';
+import YoutubeRec from '../../components/Results/YoutubeRec';
+import ArticlesRec from '../../components/Results/ArticlesRec';
+import AudioRecorder from '../../components/AudioRecorder';
+
+import TreeMap from '../../components/Analytics/TreeMap';
+import Legends from '../../components/Analytics/Legends';
+
+import { RadarChart } from '../../components/Analytics/RadarChart';
+import { BubbleChart } from '../../components/Analytics/BubbleChart';
+import ResultsPage from '../ResultsPage';
+import QuizPage from '../QuizPage';
+import AnalyticsPage from '../AnalyticsPage';
+
 
 export default function HomePage(){
 
@@ -30,11 +47,11 @@ export default function HomePage(){
 
     return(
         <Box sx={{ width: '100%' }}>
-        <Stack spacing={2}>
-          <Item><button onClick={recomHandler}>Get Recommendations</button></Item>
-          <Item><button onClick={analyticsHandler}>Analytics</button></Item>
-          <Item><button onClick={profileHandler}>Profile</button></Item>
-          <Item><QuizMain /> </Item>
+        <Stack spacing={2}>            
+          <Item><QuizPage /> </Item>
+          <Item><AudioRecorder /> </Item>  
+          <Item><ResultsPage /> </Item>
+          <Item><AnalyticsPage /> </Item>       
         </Stack>
       </Box>
     );

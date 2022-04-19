@@ -4,7 +4,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Quiz from '../../pages/Quiz';
- 
+import Wizard from '../Wizard'; 
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -39,7 +40,7 @@ export default function Popup() {
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Select the categories you would like to include in your quiz
           </Typography>
-          <Quiz />
+          <Wizard />
          </Box>
       </Modal>
     </div>

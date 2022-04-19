@@ -11,15 +11,27 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
+    "@visx/group": "^2.1.0",
+    "@visx/mock-data": "^2.1.2",
+    "@visx/scale": "^2.2.2",
+    "@visx/shape": "^2.4.0",
+    "faker": "^6.6.6",
     "react": "^18.0.0",
+    "react-chartjs-2": "^4.1.0",
+    "react-charts": "^3.0.0-beta.36",
     "react-dom": "^18.0.0",
     "react-hot-loader": "^4.13.0",
     "react-intl": "^5.24.8",
     "react-quiz-component": "^0.3.9",
     "react-redux": "^8.0.0",
     "react-scripts": "5.0.1",
+    "react-voice-recorder": "^2.1.2",
+    "react-window": "^1.8.6",
+    "recharts": "^2.1.9",
     "survey-creator-react": "^1.9.25",
-    "web-vitals": "^2.1.4"
+    "usetheform": "^3.4.1",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.0.0-rc.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,5 +56,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.1.2",
+    "chartify": "^3.6.0"
   }
 }
