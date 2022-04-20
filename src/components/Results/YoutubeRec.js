@@ -5,13 +5,16 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { FixedSizeList } from 'react-window';
 import UIControlsCard from '../ResultCard/UIControlsCard';
+import {videos} from './results'
+
+
 
 function renderRow(props) {
   const { index, style } = props;
-
+   const video = videos[index]; 
   return (
     <ListItem style={style} key={index} component="div" disablePadding>
-     <UIControlsCard />
+     <UIControlsCard name={video.snippet.title} artist={video.snippet.channelTitle} img={video.snippet.thumbnails.high.url} />
     </ListItem>
   );
 }
@@ -23,8 +26,8 @@ export default function YoutubeRec() {
     >
       <FixedSizeList
         height={400}
-        width={360}
-        itemSize={500}
+        width={600}
+        itemSize={200}
         itemCount={5}
         overscanCount={5}
       >
