@@ -1162,30 +1162,39 @@ export const books =
 
      export const articles = [
          {
-             description: 'A',
-             imgUrl: '',
-             title:"Shrimp and Chorizo Paella",
-             subheader:"September 14, 2016",
+             description: '3 Minute Depression Test',
+             imgUrl: 'https://static.psycom.net/wp-content/uploads/2020/05/iStock-1132427801-1280x429.jpg',
+             title:"Who Is This Depression Quiz For?",
+             subheader:"May 14, 2019",
              avatar:"",
              date:"",
-             more:""
+             more:"Below is a list of 10 questions designed to help you determine if you might be experiencing depression. The questions relate to life experiences common among people who have depression. Please read each question carefully, and indicate how often you have experienced the same or similar challenges in the past few weeks."
          },
          {
-            description: 'B',
-            imgUrl: '',
-            title:"Shrimp and Chorizo Paella",
-            subheader:"September 14, 2016",
+            description: 'Coping with Depression',
+            imgUrl: 'https://static.psycom.net/wp-content/uploads/2018/05/mom-withteen-daughter-94140485_L.jpg?fit=thumb&w=456&h=298',
+            title:"Prevalence of Depression Symptoms in US",
+            subheader:"Feb 14, 2016",
             avatar:"",
-            date:"",
-            more:""
+            date:"New",
+            more:"In the early months of 2020, the world was in the throes of the pandemic. At that time, the number of adults with depression in the United States tripled—jumping from 8.5% pre-pandemic to 27.8% during the height of the coronavirus. New research from Boston University School of Public Health reports that the elevated rate of depression has persisted into 2021, and even worsened. Today 1 in every 3 American adults—or 32.8%—is impacted by depression."
         },
         {
-            description: 'C',
-            imgUrl: '',
-            title:"Shrimp and Chorizo Paella",
-            subheader:"September 14, 2016",
+            description: 'Understanding Human Behavior',
+            imgUrl: 'https://static.psycom.net/wp-content/uploads/2020/01/iStock-1163339325-265x177.jpg',
+            title:"The Impact of Stress",
+            subheader:"July 7, 2021",
             avatar:"",
             date:"",
-            more:""
+            more:"Psycom has a knack for spotting trends and explaining pop culture when it’s linked to mental health. So when popular shows like Homeland and Westworld made viewers curious about mind control, we posted What Is Gaslighting? and provided more context. And when clinical terms become dinner table conversation, we’ve got that covered, too:"
+        },
+        {
+            description: 'Shedding Light on Taboo Topics',
+            imgUrl: 'https://static.psycom.net/wp-content/uploads/2020/01/iStock-1050251286-265x177.jpg',
+            title:"The Impact of Stress",
+            subheader:"August 7, 2021",
+            avatar:"",
+            date:"",
+            more:"Over the past 25 years, we’ve blown the lid off topics not often discussed in polite society. Though not officially designated as mental health disorders (in the DSM, anyway), when watching porn and/or having sex interferes with daily activity, it can be a cause for concern. Psycom’s porn addiction and sex addiction assessments can be a tool for detecting unhealthy behavior."
         },
      ]
