@@ -31,7 +31,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/function/remindLambda-cloudformation-template.json",
         "logicalId": "functionremindLambda"
       },
-      "lastPushTimeStamp": "2022-04-20T18:06:53.095Z",
+      "lastPushTimeStamp": "2022-04-20T18:23:51.872Z",
       "output": {
         "Region": "us-east-1",
         "Arn": "arn:aws:lambda:us-east-1:410729169945:function:remindLambda-dev",
@@ -69,7 +69,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/auth/remind-cloudformation-template.json",
         "logicalId": "authremind"
       },
-      "lastPushTimeStamp": "2022-04-20T18:06:55.382Z",
+      "lastPushTimeStamp": "2022-04-20T18:23:55.976Z",
       "output": {
         "UserPoolId": "us-east-1_6mEipgY7U",
         "AppClientIDWeb": "2562rlr25nl74j8tr65ht1u5tm",
@@ -101,7 +101,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/api/remindapi-cloudformation-template.json",
         "logicalId": "apiremindapi"
       },
-      "lastPushTimeStamp": "2022-04-20T18:06:53.097Z",
+      "lastPushTimeStamp": "2022-04-20T18:23:51.875Z",
       "output": {
         "ApiName": "remindapi",
         "RootUrl": "https://pyib7vj3zj.execute-api.us-east-1.amazonaws.com/dev",
