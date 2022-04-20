@@ -14,7 +14,8 @@
     },
     "categories": {
       "auth": {
-        "undefined": {}
+        "undefined": {},
+        "remind": {}
       },
       "function": {
         "remindLambda": {

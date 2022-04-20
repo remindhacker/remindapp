@@ -1,112 +1,119 @@
 {
-  "providers": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-remind-dev-83057-authRole",
-      "UnauthRoleArn": "arn:aws:iam::410729169945:role/amplify-remind-dev-83057-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::410729169945:role/amplify-remind-dev-83057-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-remind-dev-83057-deployment",
-      "UnauthRoleName": "amplify-remind-dev-83057-unauthRole",
-      "StackName": "amplify-remind-dev-83057",
-      "StackId": "arn:aws:cloudformation:us-east-1:410729169945:stack/amplify-remind-dev-83057/12c87280-bd81-11ec-b881-0eb8bcfe6be3",
-      "AmplifyAppId": "drtnesy2u3dc9",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
-    }
-  },
-  "function": {
-    "remindLambda": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [],
-      "lastBuildTimeStamp": "2022-04-16T12:35:58.156Z",
-      "lastBuildType": "PROD",
-      "lastPackageTimeStamp": "2022-04-16T12:35:59.055Z",
-      "distZipFilename": "remindLambda-3750614f5576772b4656-build.zip",
-      "s3Bucket": {
-        "deploymentBucketName": "amplify-remind-dev-83057-deployment",
-        "s3Key": "amplify-builds/remindLambda-3750614f5576772b4656-build.zip"
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/function/remindLambda-cloudformation-template.json",
-        "logicalId": "functionremindLambda"
-      },
-      "lastPushTimeStamp": "2022-04-16T12:38:31.735Z",
-      "output": {
-        "Region": "us-east-1",
-        "Arn": "arn:aws:lambda:us-east-1:410729169945:function:remindLambda-dev",
-        "Name": "remindLambda-dev",
-        "LambdaExecutionRole": "remindLambdaRole62ae5382-dev"
-      },
-      "lastPushDirHash": "RlO+yrFwoJRs5z8/gO8eZcEgPkA="
-    }
-  },
-  "auth": {
-    "remind": {
-      "service": "Cognito",
-      "serviceType": "managed",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "frontendAuthConfig": {
-        "socialProviders": [],
-        "usernameAttributes": [],
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "passwordProtectionSettings": {
-          "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": []
-        },
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
-        ],
-        "verificationMechanisms": [
-          "EMAIL"
-        ]
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/auth/remind-cloudformation-template.json",
-        "logicalId": "authremind"
-      },
-      "lastPushTimeStamp": "2022-04-16T12:38:31.735Z",
-      "output": {
-        "UserPoolId": "us-east-1_6mEipgY7U",
-        "AppClientIDWeb": "2562rlr25nl74j8tr65ht1u5tm",
-        "AppClientID": "5efmrjne4f5kt4bthltkhjnvfm",
-        "IdentityPoolId": "us-east-1:5b12c205-cbc2-4417-93dc-7cc2e480ed5d",
-        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:410729169945:userpool/us-east-1_6mEipgY7U",
-        "IdentityPoolName": "remind_identitypool_24160035__dev",
-        "UserPoolName": "remind_userpool_24160035"
-      },
-      "lastPushDirHash": "IYPlJQR+cnKyvQmDqrSt/HsgZU0="
-    }
-  },
-  "api": {
-    "remindapi": {
-      "service": "API Gateway",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "remindLambda",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-remind-dev-83057-authRole",
+            "UnauthRoleArn": "arn:aws:iam::410729169945:role/amplify-remind-dev-83057-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::410729169945:role/amplify-remind-dev-83057-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-remind-dev-83057-deployment",
+            "UnauthRoleName": "amplify-remind-dev-83057-unauthRole",
+            "StackName": "amplify-remind-dev-83057",
+            "StackId": "arn:aws:cloudformation:us-east-1:410729169945:stack/amplify-remind-dev-83057/12c87280-bd81-11ec-b881-0eb8bcfe6be3",
+            "AmplifyAppId": "drtnesy2u3dc9",
+            "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
         }
-      ],
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/api/remindapi-cloudformation-template.json",
-        "logicalId": "apiremindapi"
-      },
-      "lastPushTimeStamp": "2022-04-16T12:38:31.735Z",
-      "output": {
-        "ApiName": "remindapi",
-        "RootUrl": "https://pyib7vj3zj.execute-api.us-east-1.amazonaws.com/dev",
-        "ApiId": "pyib7vj3zj"
-      },
-      "lastPushDirHash": "nFkAuz7NbFfx8UYrS/4GBJGW3Dc="
+    },
+    "function": {
+        "remindLambda": {
+            "build": true,
+            "providerPlugin": "awscloudformation",
+            "service": "Lambda",
+            "dependsOn": [],
+            "lastBuildTimeStamp": "2022-04-16T12:35:58.156Z",
+            "lastBuildType": "PROD",
+            "lastPackageTimeStamp": "2022-04-16T12:35:59.055Z",
+            "distZipFilename": "remindLambda-3750614f5576772b4656-build.zip",
+            "s3Bucket": {
+                "deploymentBucketName": "amplify-remind-dev-83057-deployment",
+                "s3Key": "amplify-builds/remindLambda-3750614f5576772b4656-build.zip"
+            },
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/function/remindLambda-cloudformation-template.json",
+                "logicalId": "functionremindLambda"
+            },
+            "lastPushTimeStamp": "2022-04-16T12:38:31.735Z",
+            "output": {
+                "Region": "us-east-1",
+                "Arn": "arn:aws:lambda:us-east-1:410729169945:function:remindLambda-dev",
+                "Name": "remindLambda-dev",
+                "LambdaExecutionRole": "remindLambdaRole62ae5382-dev"
+            },
+            "lastPushDirHash": "RlO+yrFwoJRs5z8/gO8eZcEgPkA="
+        }
+    },
+    "auth": {
+        "remind": {
+            "service": "Cognito",
+            "serviceType": "managed",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [],
+            "frontendAuthConfig": {
+                "socialProviders": [],
+                "usernameAttributes": [],
+                "signupAttributes": [
+                    "EMAIL"
+                ],
+                "passwordProtectionSettings": {
+                    "passwordPolicyMinLength": 8,
+                    "passwordPolicyCharacters": []
+                },
+                "mfaConfiguration": "OFF",
+                "mfaTypes": [
+                    "SMS"
+                ],
+                "verificationMechanisms": [
+                    "EMAIL"
+                ]
+            },
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/auth/remind-cloudformation-template.json",
+                "logicalId": "authremind"
+            },
+            "lastPushTimeStamp": "2022-04-16T12:38:31.735Z",
+            "output": {
+                "UserPoolId": "us-east-1_6mEipgY7U",
+                "AppClientIDWeb": "2562rlr25nl74j8tr65ht1u5tm",
+                "AppClientID": "5efmrjne4f5kt4bthltkhjnvfm",
+                "IdentityPoolId": "us-east-1:5b12c205-cbc2-4417-93dc-7cc2e480ed5d",
+                "UserPoolArn": "arn:aws:cognito-idp:us-east-1:410729169945:userpool/us-east-1_6mEipgY7U",
+                "IdentityPoolName": "remind_identitypool_24160035__dev",
+                "UserPoolName": "remind_userpool_24160035"
+            },
+            "lastPushDirHash": "IYPlJQR+cnKyvQmDqrSt/HsgZU0="
+        }
+    },
+    "api": {
+        "remindapi": {
+            "service": "API Gateway",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": [
+                {
+                    "category": "function",
+                    "resourceName": "remindLambda",
+                    "attributes": [
+                        "Name",
+                        "Arn"
+                    ]
+                }
+            ],
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/amplify-remind-dev-83057-deployment/amplify-cfn-templates/api/remindapi-cloudformation-template.json",
+                "logicalId": "apiremindapi"
+            },
+            "lastPushTimeStamp": "2022-04-16T12:38:31.735Z",
+            "output": {
+                "ApiName": "remindapi",
+                "RootUrl": "https://pyib7vj3zj.execute-api.us-east-1.amazonaws.com/dev",
+                "ApiId": "pyib7vj3zj"
+            },
+            "lastPushDirHash": "nFkAuz7NbFfx8UYrS/4GBJGW3Dc="
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "type": "cicd",
+            "lastPushTimeStamp": "2022-04-16T18:25:56.959Z"
+        }
     }
-  }
 }

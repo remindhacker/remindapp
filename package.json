@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/ui-react": "^2.15.4",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/roboto": "^4.5.5",
@@ -15,6 +16,7 @@
     "@visx/mock-data": "^2.1.2",
     "@visx/scale": "^2.2.2",
     "@visx/shape": "^2.4.0",
+    "aws-amplify": "^4.3.20",
     "axios": "^0.26.1",
     "faker": "^6.6.6",
     "react": "^18.0.0",

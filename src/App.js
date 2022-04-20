@@ -7,11 +7,18 @@ import '@fontsource/roboto/700.css';
 import TopBar from './components/TopBar'
 import HomePage from './pages/Home';
 import Quiz from './pages/Quiz';
+import { Amplify } from 'aws-amplify';
 
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
-function App() {
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+
+function App({ signOut, user }) {
   return (
     <div className="App">
+       <button onClick={signOut}>Sign out</button>
        <TopBar />
        <HomePage />
        
@@ -19,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);

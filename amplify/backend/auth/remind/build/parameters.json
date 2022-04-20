@@ -35,7 +35,7 @@
   "resourceName": "remind",
   "sharedId": "24160035",
   "serviceName": "Cognito",
-  "useDefault": "manual",
+  "useDefault": "default",
   "authRoleArn": {
     "Fn::GetAtt": [
       "AuthRole",
@@ -50,5 +50,8 @@
   },
   "breakCircularDependency": true,
   "useEnabledMfas": true,
-  "dependsOn": []
+  "dependsOn": [],
+  "hostedUI": false,
+  "userPoolGroupList": [],
+  "authProviders": []
 }
